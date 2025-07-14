@@ -3992,6 +3992,10 @@ merge-stream@^2.0.0:
   resolved "https://registry.yarnpkg.com/merge-stream/-/merge-stream-2.0.0.tgz#52823629a14dd00c9770fb6ad47dc6310f2c1f60"
   integrity sha512-abv/qOcuPfk3URPfDzmZU1LKmuw8kT+0nIHvKrKgFrwifol/doWcdA4ZqsWQ8ENrFKkd67Mfpo/LovbIUsbt3w==
 
+"mfmgroup.alterafundo@http://mfmgroup.vtexassets.com/_v/public/typings/v1/mfmgroup.alterafundo@0.0.1/public/@types/mfmgroup.alterafundo":
+  version "0.0.1"
+  resolved "http://mfmgroup.vtexassets.com/_v/public/typings/v1/mfmgroup.alterafundo@0.0.1/public/@types/mfmgroup.alterafundo#a389f0b947aae96255691a2f7f283687aa7f3da4"
+
 micromatch@^3.1.4:
   version "3.1.10"
   resolved "https://registry.yarnpkg.com/micromatch/-/micromatch-3.1.10.tgz#70859bc95c9840952f359a068a3fc49f9ecfac23"

@@ -19,6 +19,7 @@
     "@vtex/tsconfig": "^0.4.4",
     "apollo-cache-inmemory": "^1.6.5",
     "graphql": "^14.6.0",
+    "mfmgroup.alterafundo": "http://mfmgroup.vtexassets.com/_v/public/typings/v1/mfmgroup.alterafundo@0.0.1/public/@types/mfmgroup.alterafundo",
     "typescript": "3.9.7",
     "vtex.render-runtime": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.136.1/public/@types/vtex.render-runtime"
   },

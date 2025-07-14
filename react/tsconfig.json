@@ -1,15 +1,19 @@
 {
-  
+  "extends": "@vtex/tsconfig",
   "compilerOptions": {
-    "jsx": "react",
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "strict": true,
-    "baseUrl": "./",
-    "paths": {
-      "*": ["node_modules/*", "typings/*"]
-    }
+    "noEmitOnError": false,
+    "lib": [
+      "dom"
+    ],
+    "module": "esnext",
+    "moduleResolution": "node",
+    "target": "es2017"
   },
-  "include": ["**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules", "react/typings"]
+  "include": [
+    "./typings/*.d.ts",
+    "./**/*.tsx",
+    "./**/*.ts",
+    "./**/*.js",
+    "./**/*.jsx"
+  ]
 }
