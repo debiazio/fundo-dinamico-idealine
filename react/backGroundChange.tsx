@@ -25,23 +25,23 @@ function Bundle() {
 
     if (!el) return
 
-    const validIdsRed = ['2945', '2946']
-    const validIdsBlack = ['2947', '2948']
-    const validIdsPearl = ['2796', '2797']
-    const validIdsRoseGold = ['2887', '2886']
-    const validIdsPink = ['2795', '2885']
+    const validIdsSweetPink = ['2945', '2946']
+    const validIdsSweetBlack = ['2947', '2948']
+    const validIdsPerola = [ '2797', '2887']
+    const validIdsRoseGold = ['2796', '2886']
+    const validIdsRosa = ['2795', '2885']
 
-    if (validIdsRed.includes(productId || '')) {
+    if (validIdsSweetPink.includes(productId || '')) {
       el.style.backgroundImage = "url(https://stermax.com.br/images_idealine/fundo-dinamico/sweet-pink-5litros-fundo-pdp.webp)"
       el.style.backgroundSize = 'cover'
       el.style.backgroundRepeat = 'no-repeat'
       el.style.backgroundPosition = 'center'
-    } else if (validIdsBlack.includes(productId || '')) {
+    } else if (validIdsSweetBlack.includes(productId || '')) {
       el.style.backgroundImage = "url(https://stermax.com.br/images_idealine/fundo-dinamico/bellinha-5l-sweet-black.webp)"
       el.style.backgroundSize = 'cover'
       el.style.backgroundRepeat = 'no-repeat'
       el.style.backgroundPosition = 'center'
-    } else if (validIdsPearl.includes(productId || '')) {
+    } else if (validIdsPerola.includes(productId || '')) {
       el.style.backgroundImage = "url(https://stermax.com.br/images_idealine/fundo-dinamico/bellinha-5l-perola.webp)"
       el.style.backgroundSize = 'cover'
       el.style.backgroundRepeat = 'no-repeat'
@@ -51,7 +51,7 @@ function Bundle() {
       el.style.backgroundSize = 'cover'
       el.style.backgroundRepeat = 'no-repeat'
       el.style.backgroundPosition = 'center'
-    } else if (validIdsPink.includes(productId || '')) {
+    } else if (validIdsRosa.includes(productId || '')) {
       el.style.backgroundImage = "url(https://stermax.com.br/images_idealine/fundo-dinamico/bellinha-5l-rosa.webp)"
       el.style.backgroundSize = 'cover'
       el.style.backgroundRepeat = 'no-repeat'
@@ -64,7 +64,7 @@ function Bundle() {
     }
   }, [productId])
 
-  return null 
+  return null
 }
 
 export default Bundle
