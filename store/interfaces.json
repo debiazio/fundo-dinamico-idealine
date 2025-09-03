@@ -1,5 +1,8 @@
 {
   "appalterafundo": {
     "component": "backGroundChange"
+  },
+  "alteraBorda": {
+    "component": "BundleBorder"
   }
 }
