@@ -21,7 +21,6 @@ function Bundle() {
   }, [loading, data])
 
   useEffect(() => {
-    // ====== BACKGROUND (igual você já tinha) ======
     const bgEl = document.querySelector(
       '.vtex-flex-layout-0-x-flexRowContent--conteiner-background-custom'
     ) as HTMLElement | null
@@ -31,7 +30,7 @@ function Bundle() {
     const validIdsPerola = ['2797', '2887']
     const validIdsRoseGold = ['2796', '2886']
     const validIdsRosa = ['2795', '2885']
-    const validIdsGlowin = ['2954', '2955']
+    const validIdsGlowin = ['2954', '2955', '2960']
 
     if (bgEl) {
       if (validIdsSweetPink.includes(productId || '')) {
@@ -40,36 +39,42 @@ function Bundle() {
         bgEl.style.backgroundSize = 'cover'
         bgEl.style.backgroundRepeat = 'no-repeat'
         bgEl.style.backgroundPosition = 'center'
+
       } else if (validIdsSweetBlack.includes(productId || '')) {
         bgEl.style.backgroundImage =
           'url(https://stermax.com.br/images_idealine/fundo-dinamico/bellinha-5l-sweet-black.webp)'
         bgEl.style.backgroundSize = 'cover'
         bgEl.style.backgroundRepeat = 'no-repeat'
         bgEl.style.backgroundPosition = 'center'
+
       } else if (validIdsPerola.includes(productId || '')) {
         bgEl.style.backgroundImage =
           'url(https://stermax.com.br/images_idealine/fundo-dinamico/bellinha-5l-perola.webp)'
         bgEl.style.backgroundSize = 'cover'
         bgEl.style.backgroundRepeat = 'no-repeat'
         bgEl.style.backgroundPosition = 'center'
+        bgEl.style.height = '90vh'
       } else if (validIdsRoseGold.includes(productId || '')) {
         bgEl.style.backgroundImage =
           'url(https://stermax.com.br/images_idealine/fundo-dinamico/bellinha-5l-rose-gold.webp)'
         bgEl.style.backgroundSize = 'cover'
         bgEl.style.backgroundRepeat = 'no-repeat'
         bgEl.style.backgroundPosition = 'center'
+
       } else if (validIdsRosa.includes(productId || '')) {
         bgEl.style.backgroundImage =
           'url(https://stermax.com.br/images_idealine/fundo-dinamico/bellinha-5l-rosa.webp)'
         bgEl.style.backgroundSize = 'cover'
         bgEl.style.backgroundRepeat = 'no-repeat'
         bgEl.style.backgroundPosition = 'center'
+
       } else if (validIdsGlowin.includes(productId || '')) {
         bgEl.style.backgroundImage =
           'url(https://stermax.com.br/images_idealine/fundo-dinamico/glowin.webp)'
         bgEl.style.backgroundSize = 'cover'
         bgEl.style.backgroundRepeat = 'no-repeat'
         bgEl.style.backgroundPosition = 'center'
+
       } else {
         bgEl.style.backgroundImage = ''
         bgEl.style.backgroundSize = ''
