@@ -148,7 +148,7 @@ function Bundle() {
       observer.observe(document.body, { childList: true, subtree: true })
     }
 
-    // Cleanup: desconecta observer e limpa bordas ao trocar de produto/desmontar
+    
     return () => {
       if (observer) observer.disconnect()
       clearAllBorders()
