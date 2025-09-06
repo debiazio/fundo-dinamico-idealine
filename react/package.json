@@ -19,9 +19,12 @@
     "@vtex/tsconfig": "^0.4.4",
     "apollo-cache-inmemory": "^1.6.5",
     "graphql": "^14.6.0",
-    "mfmgroup.alterafundo": "http://mfmgroup.vtexassets.com/_v/public/typings/v1/mfmgroup.alterafundo@0.0.1/public/@types/mfmgroup.alterafundo",
+    "mfmgroup.alterafundo": "https://dev0idealine0layout0lucas--mfmgroup.myvtex.com/_v/private/typings/linked/v1/mfmgroup.alterafundo@0.0.5+build1757102571/public/@types/mfmgroup.alterafundo",
     "typescript": "3.9.7",
-    "vtex.render-runtime": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.136.1/public/@types/vtex.render-runtime"
+    "vtex.css-handles": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.css-handles@0.4.4/public/@types/vtex.css-handles",
+    "vtex.product-context": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-context@0.10.1/public/@types/vtex.product-context",
+    "vtex.render-runtime": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.136.1/public/@types/vtex.render-runtime",
+    "vtex.search-graphql": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.search-graphql@0.69.1/public/@types/vtex.search-graphql"
   },
   "resolutions": {
     "@types/jest": "26.0.15"
