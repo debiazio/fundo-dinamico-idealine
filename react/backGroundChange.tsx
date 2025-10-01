@@ -53,7 +53,6 @@ function Bundle() {
         bgEl.style.backgroundSize = 'cover'
         bgEl.style.backgroundRepeat = 'no-repeat'
         bgEl.style.backgroundPosition = 'center'
-        bgEl.style.height = '90vh'
       } else if (validIdsRoseGold.includes(productId || '')) {
         bgEl.style.backgroundImage =
           'url(https://stermax.com.br/images_idealine/fundo-dinamico/bellinha-5l-rose-gold.webp)'
