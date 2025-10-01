@@ -25,8 +25,8 @@ function Bundle() {
       '.vtex-flex-layout-0-x-flexRowContent--conteiner-background-custom'
     ) as HTMLElement | null
 
-    const validIdsSweetPink = ['2945', '2946']
-    const validIdsSweetBlack = ['2947', '2948']
+    const validIdsSweetPink = ['2945', '2946', '2951']
+    const validIdsSweetBlack = ['2947', '2948', '2962']
     const validIdsPerola = ['2797', '2887']
     const validIdsRoseGold = ['2796', '2886']
     const validIdsRosa = ['2795', '2885']
@@ -148,7 +148,7 @@ function Bundle() {
       observer.observe(document.body, { childList: true, subtree: true })
     }
 
-    
+
     return () => {
       if (observer) observer.disconnect()
       clearAllBorders()
