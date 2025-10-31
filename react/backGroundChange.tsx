@@ -31,6 +31,7 @@ function Bundle() {
     const validIdsRoseGold = ['2796', '2886']
     const validIdsRosa = ['2795', '2885']
     const validIdsGlowin = ['2954', '2955', '2960']
+    const validIdsMarcelo = ['2902', '2798']
 
     if (bgEl) {
       if (validIdsSweetPink.includes(productId || '')) {
@@ -74,7 +75,15 @@ function Bundle() {
         bgEl.style.backgroundRepeat = 'no-repeat'
         bgEl.style.backgroundPosition = 'center'
 
-      } else {
+      } else if (validIdsMarcelo.includes(productId || '')) {
+        bgEl.style.backgroundImage =
+          'url(https://stermax.com.br/images_idealine/fundo-dinamico/fundo-marcelo-brito.webp)'
+        bgEl.style.backgroundSize = 'cover'
+        bgEl.style.backgroundRepeat = 'no-repeat'
+        bgEl.style.backgroundPosition = 'center'
+
+      }
+       else {
         bgEl.style.backgroundImage = ''
         bgEl.style.backgroundSize = ''
         bgEl.style.backgroundRepeat = ''
@@ -82,7 +91,7 @@ function Bundle() {
       }
     }
 
-    // ====== BORDA (novo, no mesmo efeito) ======
+    // ====== EFEITO DA BORDA DO SELETOR DE CORES  ======
     // Mapa direto ID -> classe
     const idToClass: Record<string, string> = {
       // Rosa
@@ -103,6 +112,9 @@ function Bundle() {
       // Glowin
       '2954': 'vtex-store-link-0-x-childrenContainer--link-glowin',
       '2955': 'vtex-store-link-0-x-childrenContainer--link-glowin',
+      // Miniatura marcelo brito
+      '2902': 'vtex-store-link-0-x-childrenContainer--link-marcelo-brito-miniatura',
+      '2798': 'vtex-store-link-0-x-childrenContainer--link-marcelo-brito-miniatura',
     }
 
     const allTargetClasses = Array.from(new Set(Object.values(idToClass)))
