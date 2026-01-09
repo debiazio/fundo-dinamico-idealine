@@ -113,8 +113,8 @@ function Bundle() {
       '2954': 'vtex-store-link-0-x-childrenContainer--link-glowin',
       '2955': 'vtex-store-link-0-x-childrenContainer--link-glowin',
       // Miniatura marcelo brito
-      '2902': 'vtex-store-link-0-x-childrenContainer--link-marcelo-brito-miniatura',
-      '2798': 'vtex-store-link-0-x-childrenContainer--link-marcelo-brito-miniatura',
+      '2902': 'vtex-store-link-0-x-childrenContainer--link-marcelo-brito',
+      '2798': 'vtex-store-link-0-x-childrenContainer--link-marcelo-brito',
     }
 
     const allTargetClasses = Array.from(new Set(Object.values(idToClass)))
