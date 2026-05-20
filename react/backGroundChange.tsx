@@ -33,6 +33,8 @@ function Bundle() {
     const validIdsGlowin = ['2954', '2955', '2960']
     const validIdsMarcelo = ['2902', '2798']
     const validIdsSweetSilver = ['2974']
+    // 2827 é um código provisorio para teste
+    const validIdsLilac = ['2827']
 
     if (bgEl) {
       if (validIdsSweetPink.includes(productId || '')) {
@@ -83,10 +85,17 @@ function Bundle() {
         bgEl.style.backgroundRepeat = 'no-repeat'
         bgEl.style.backgroundPosition = 'center'
 
-      }
-      else if (validIdsSweetSilver.includes(productId || '')) {
+      } else if (validIdsSweetSilver.includes(productId || '')) {
         bgEl.style.backgroundImage =
           'url(https://stermax.com.br/images_idealine/fundo-dinamico/sweet-silver-fundo-pdp.webp)'
+        bgEl.style.backgroundSize = 'cover'
+        bgEl.style.backgroundRepeat = 'no-repeat'
+        bgEl.style.backgroundPosition = 'center'
+
+      } else if (validIdsLilac.includes(productId || '')) {
+        bgEl.style.backgroundImage =
+          // 'url(https://stermax.com.br/images_idealine/fundo-dinamico/lilac-fundo-dinamico.webp)'
+          'url(https://stermax.com.br/images_idealine/fundo-dinamico/lilac-fundo-dinamico-menor.webp)'
         bgEl.style.backgroundSize = 'cover'
         bgEl.style.backgroundRepeat = 'no-repeat'
         bgEl.style.backgroundPosition = 'center'
@@ -126,6 +135,8 @@ function Bundle() {
       '2798': 'vtex-store-link-0-x-childrenContainer--link-marcelo-brito',
       // Sweet Silver
       '2974': 'vtex-store-link-0-x-childrenContainer--link-sweet-silver',
+      // lilac- id provisorio para teste
+      '2827': 'vtex-store-link-0-x-childrenContainer--link--link-lilac',
     }
 
     const allTargetClasses = Array.from(new Set(Object.values(idToClass)))

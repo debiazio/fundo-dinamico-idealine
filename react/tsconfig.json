@@ -3,11 +3,14 @@
   "compilerOptions": {
     "noEmitOnError": false,
     "lib": [
-      "dom"
+      "dom",
+      "es2017",
+      "es2016.array.include"
     ],
     "module": "esnext",
     "moduleResolution": "node",
-    "target": "es2017"
+    "ignoreDeprecations": "6.0",
+    "target": "es2016"
   },
   "include": [
     "./typings/*.d.ts",
